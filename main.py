@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template, jsonify
 
 app = Flask(__name__)
 
@@ -9,24 +9,23 @@ def index():
 
 @app.route('/demo')
 def demo():
-    return 'Hello World!'
+    return render_template('home.html')
 
 @app.route('/api/product', methods=['GET'])
 def getMethod():
-    return 'api-get'
+    return jsonify('api-get')
 
 @app.route('/api/product', methods=['POST'])
 def postMethod():
-    return 'api-post'
+    return jsonify('api-post')
 
-@app.route('/apu/product', methods=['PUT'])
+@app.route('/api/product', methods=['PUT'])
 def putMethod():
-    return 'api-put'
+    return jsonify('api-put')
 
 @app.route('/api/product', methods=['DELETE'])
 def deleteMethod():
-    return 'api-delete'
-
+    return jsonify('api-delete')
 
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0')
