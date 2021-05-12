@@ -1,6 +1,6 @@
-#Docker Flask CRUD Demo
+# Docker Flask CRUD Demo
 
-##Steps
+## Steps
 #### 1. clone from github
 `git clone https://github.com/ddy20824/docker_demo.git`
 
