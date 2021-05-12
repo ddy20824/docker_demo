@@ -1,6 +1,7 @@
 # Docker Flask CRUD Demo
+use docker and flask to build home page and CRUD api.
 
-## Steps
+## Usage
 #### 1. clone from github
 ```
 git clone https://github.com/ddy20824/docker_demo.git
@@ -16,6 +17,7 @@ docker image build -t dockerfile_demo .
 ```
 docker run -it --rm -d -p 34567:5000 --name demo dockerfile_demo
 ```
+
 ## CRUD API (RESTful API)
 #### Read
 ```
