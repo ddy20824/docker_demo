@@ -15,7 +15,7 @@ docker image build -t dockerfile_demo .
 
 #### 3. run docker image
 ```
-docker run -it --rm -d -p 34567:5000 --name demo dockerfile_demo
+docker run -d -p 34567:5000 --name demo dockerfile_demo
 ```
 
 ## CRUD API (RESTful API)

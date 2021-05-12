@@ -13,18 +13,22 @@ def demo():
 
 @app.route('/api/product', methods=['GET'])
 def getMethod():
+    # read somethin from database or file
     return jsonify('api-get(read)')
 
 @app.route('/api/product', methods=['POST'])
 def postMethod():
+    # insert into database or write file
     return jsonify('api-post(create)')
 
 @app.route('/api/product', methods=['PUT'])
 def putMethod():
+    # update something in database or file
     return jsonify('api-put(update)')
 
 @app.route('/api/product', methods=['DELETE'])
 def deleteMethod():
+    # delete somthing in database or file
     return jsonify('api-delete(delete)')
 
 if __name__ == "__main__":
